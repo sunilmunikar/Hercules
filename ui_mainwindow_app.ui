@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>833</width>
+    <height>643</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>IntraMaps Roam: Mobile Data Collection</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+    <normaloff>:/branding/logo</normaloff>:/branding/logo</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>32</width>
+    <height>32</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
+      <widget class="MapWidget" name="canvas_page">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+      <widget class="ProjectsWidget" name="projectwidget">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+      <widget class="SettingsWidget" name="settingswidget">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+      <widget class="QWidget" name="loadin_page">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="projectimage">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="projectloading_label">
+          <property name="font">
+           <font>
+            <pointsize>32</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Project {} Loading</string>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>24</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Please wait....</string>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widgetpage">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>3</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>3</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+      <widget class="SyncWidget" name="syncwidget"/>
+      <widget class="GPSWidget" name="gpswidget"/>
+      <widget class="LegendWidget" name="legendpage"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="HideableToolbar" name="menutoolbar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>sidetoolbar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>45</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <property name="page" stdset="0">
+    <number>5</number>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionHome_2"/>
+   <addaction name="actionDataEntry"/>
+   <addaction name="actionProject"/>
+   <addaction name="actionMap"/>
+   <addaction name="actionGPS"/>
+   <addaction name="actionSync"/>
+   <addaction name="actionSettings"/>
+   <addaction name="actionQuit"/>
+  </widget>
+  <action name="actionHome_2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/home</normaloff>:/icons/home</iconset>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+   <property name="iconText">
+    <string>Home</string>
+   </property>
+   <property name="page" stdset="0">
+    <number>0</number>
+   </property>
+  </action>
+  <action name="actionProject">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/open</normaloff>:/icons/open</iconset>
+   </property>
+   <property name="text">
+    <string>Projects</string>
+   </property>
+   <property name="iconText">
+    <string>Projects    </string>
+   </property>
+   <property name="page" stdset="0">
+    <number>1</number>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/config</normaloff>:/icons/config</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="iconText">
+    <string>Settings     </string>
+   </property>
+   <property name="page" stdset="0">
+    <number>2</number>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/quit</normaloff>:/icons/quit</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="iconText">
+    <string>Quit           </string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/home</normaloff>:/icons/home</iconset>
+   </property>
+   <property name="text">
+    <string>Home View</string>
+   </property>
+   <property name="toolTip">
+    <string>Home View</string>
+   </property>
+  </action>
+  <action name="actionPan">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/pan</normaloff>:/icons/pan</iconset>
+   </property>
+   <property name="text">
+    <string>Pan</string>
+   </property>
+  </action>
+  <action name="actionZoom_In">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/in</normaloff>:/icons/in</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom In</string>
+   </property>
+  </action>
+  <action name="actionZoom_Out">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/out</normaloff>:/icons/out</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom Out</string>
+   </property>
+  </action>
+  <action name="actionRaster">
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/photo</normaloff>:/icons/photo</iconset>
+   </property>
+   <property name="text">
+    <string>Aerial Photo</string>
+   </property>
+  </action>
+  <action name="actionEdit_Tools">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/edittools</normaloff>:/icons/edittools</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Tools</string>
+   </property>
+  </action>
+  <action name="actionEdit_Attributes">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Attributes</string>
+   </property>
+  </action>
+  <action name="actionEnable_GPS">
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/gps</normaloff>:/icons/gps</iconset>
+   </property>
+   <property name="text">
+    <string>Enable GPS</string>
+   </property>
+  </action>
+  <action name="actionSync">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/sync</normaloff>:/icons/sync</iconset>
+   </property>
+   <property name="text">
+    <string>Sync     </string>
+   </property>
+   <property name="iconText">
+    <string>Sync          </string>
+   </property>
+   <property name="page" stdset="0">
+    <number>5</number>
+   </property>
+  </action>
+  <action name="actionMove">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/move</normaloff>:/icons/move</iconset>
+   </property>
+   <property name="text">
+    <string>Move Feature</string>
+   </property>
+  </action>
+  <action name="actionGPSFeature">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icons/gpsadd</normaloff>:/icons/gpsadd</iconset>
+   </property>
+   <property name="text">
+    <string>Capture at GPS</string>
+   </property>
+   <property name="toolTip">
+    <string>Capture at GPS</string>
+   </property>
+  </action>
+  <action name="actionDataEntry">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/dataentry</normaloff>:/icons/dataentry</iconset>
+   </property>
+   <property name="text">
+    <string>Data Entry</string>
+   </property>
+   <property name="iconText">
+    <string>Data Entry</string>
+   </property>
+   <property name="page" stdset="0">
+    <number>4</number>
+   </property>
+  </action>
+  <action name="actionInfo">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/info</normaloff>:/icons/info</iconset>
+   </property>
+   <property name="text">
+    <string>Select</string>
+   </property>
+  </action>
+  <action name="actionGPS">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/gps</normaloff>:/icons/gps</iconset>
+   </property>
+   <property name="text">
+    <string>GPS</string>
+   </property>
+   <property name="iconText">
+    <string>GPS           </string>
+   </property>
+   <property name="page" stdset="0">
+    <number>6</number>
+   </property>
+  </action>
+  <action name="actionMap">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../Roam-master/Roam-master/src/roam/resources.qrc">
+     <normaloff>:/icons/map</normaloff>:/icons/map</iconset>
+   </property>
+   <property name="text">
+    <string>Map</string>
+   </property>
+   <property name="iconText">
+    <string>Map</string>
+   </property>
+   <property name="page" stdset="0">
+    <number>7</number>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HideableToolbar</class>
+   <extends>QToolBar</extends>
+   <header>roam.gui</header>
+  </customwidget>
+  <customwidget>
+   <class>LegendWidget</class>
+   <extends>QWidget</extends>
+   <header>roam.gui</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GPSWidget</class>
+   <extends>QWidget</extends>
+   <header>roam.gui</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SyncWidget</class>
+   <extends>QWidget</extends>
+   <header>roam.gui</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SettingsWidget</class>
+   <extends>QWidget</extends>
+   <header>roam.gui</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ProjectsWidget</class>
+   <extends>QWidget</extends>
+   <header>roam.gui</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MapWidget</class>
+   <extends>QWidget</extends>
+   <header>roam.gui</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Roam-master/Roam-master/src/roam/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
