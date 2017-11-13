@@ -33,9 +33,16 @@ class AppMainwindow(QtGui.QMainWindow, ui_mainwindow_stacked.Ui_MainWindow):
         #QMainWindow.__init__(self)
         self.setupUi(self)
 
-        self.Home.clicked.connect(self.display1)
-        self.DataEntry.clicked.connect(self.display2)
+        self.Project.clicked.connect(self.display1)
+        self.NewProject.clicked.connect(self.display2)
         self.Locus.clicked.connect(self.display3)
+        self.Find.clicked.connect(self.display4)
+        self.Sample.clicked.connect(self.display5)
+
+
+
+       # self.Map.clicked.connect(self.display4)
+
 
 
 
@@ -56,6 +63,12 @@ class AppMainwindow(QtGui.QMainWindow, ui_mainwindow_stacked.Ui_MainWindow):
 
     def display3(self):
         self.stackedWidget.setCurrentIndex(2)
+
+    def display4(self):
+        self.stackedWidget.setCurrentIndex(3)
+
+    def display5(self):
+        self.stackedWidget.setCurrentIndex(4)
 
         # self.list_view()
         # self.LocusIdEntry.setPlaceholderText("Enter locus ID ")
