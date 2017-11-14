@@ -11,16 +11,29 @@ class SpatialiteDbConnect:
             # creating/connecting the test_db
 
             connection = db.connect('SIIS_2017.sqlite')
+            #cursor = connection.cursor()
+            #db.autocommit(True)
 
             #creating a cursor
 
-            cursor = connection.execute('SELECT  sqlite_version()')
+            #cursor = connection.execute('SELECT  sqlite_version()')
+
+            # """cursor = connection.execute(
+            #     """INSERT  INTO  excavation  ( projectTitle, projectType, projectSubType, site, studyArea)
+            #      VALUES (?, ?, ?, ?, ? )""", ('ann', 'bbb', 'c', 'd', 'e'))"""
+            #
+            cursor = connection.execute('SELECT * FROM  excavation')
+
             print cursor.fetchall()
+
+
+            #connection.close()
+
 
 
             #exception
         except:
-            pprint("I am unable to connect to the database.")
+            print("I am unable to connect to the database.")
 
 if __name__=='__main__':
     database_connection = SpatialiteDbConnect()
