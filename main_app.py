@@ -254,8 +254,8 @@ class AppMainwindow(QtGui.QMainWindow, ui_mainwindow_stacked.Ui_MainWindow):
 #
 
 def addproject(self):
-    import newproject_ui
-    second = newproject_ui.Ui_Form
+    import ui_newproject
+    second = ui_newproject.Ui_Form
 
     second.show()
 

@@ -13,7 +13,7 @@ import Locus_entry_ui
 import form_layout_ui
 from locus_data import LocusDataEntryDialog
 from locusDetailed import *
-from newproject_ui import *
+from ui_newproject import *
 from project_ui import *
 from find_main_ui import *
 from sample_main_ui import *

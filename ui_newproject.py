@@ -24,10 +24,17 @@ class NewProject(QtGui.QWidget):
 
 
         self.ProjectTitle = QtGui.QLineEdit()
+
+        self.ProjectType = QtGui.QHBoxLayout()
+        self.ProjectType.addWidget(QtGui.QRadioButton("Archaeological Project"))
+        self.ProjectType.addWidget(QtGui.QRadioButton("Fieldwork Activity"))
+
+
+
         self.ProjectLabel = QtGui.QLabel("Project Type:")
 
-        self.ArchaeologicalProject = QtGui.QCheckBox("Archaeological Project")
-        self.FieldworkActivity = QtGui.QCheckBox("Fieldwork Activity")
+        #self.ArchaeologicalProject = QtGui.QCheckBox("Archaeological Project")
+        #self.FieldworkActivity = QtGui.QCheckBox("Fieldwork Activity")
 
         self.ArchaeologicalProjectType = QtGui.QComboBox()
         self.ArchaeologicalProjectType.setFixedWidth(200)
