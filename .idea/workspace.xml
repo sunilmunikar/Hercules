@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab9b89ca-0c42-45e2-9960-8db30a249bb7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/comboboxExample.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/locus_repository.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testConnection.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui_locus.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/widget_locus.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/locusDetailed.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main_app.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SIIS_2017.sqlite" afterPath="$PROJECT_DIR$/SIIS_2017.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/devPythonLocus.iml" afterPath="$PROJECT_DIR$/.idea/devPythonLocus.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newproject_repository.py" afterPath="$PROJECT_DIR$/newproject_repository.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spatialiteConnection.py" afterPath="$PROJECT_DIR$/spatialiteConnection.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tabVE_material_ui.py" afterPath="$PROJECT_DIR$/tabVE_material_ui.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui_locusDetailed.py" afterPath="$PROJECT_DIR$/ui_locusDetailed.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui_mainwindow_stacked.py" afterPath="$PROJECT_DIR$/ui_mainwindow_stacked.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui_newproject.py" afterPath="$PROJECT_DIR$/ui_newproject.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widget_newproject.py" afterPath="$PROJECT_DIR$/widget_newproject.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comboboxExample.py" afterPath="$PROJECT_DIR$/comboboxExample.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widget_locus.py" afterPath="$PROJECT_DIR$/widget_locus.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,9 +38,9 @@
     <SUITE FILE_PATH="coverage/Hercules$tabHE_Floor_ui.coverage" NAME="tabHE_Floor_ui Coverage Results" MODIFIED="1510216816163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Hercules$tabVE_ashlarSurfTreat_ui.coverage" NAME="tabVE_ashlarSurfTreat_ui Coverage Results" MODIFIED="1510134502882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/devPythonLocus$map.coverage" NAME="map Coverage Results" MODIFIED="1504860412154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Hercules$SIISv1_app.coverage" NAME="SIISv1_app Coverage Results" MODIFIED="1511265200283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Hercules$SIISv1_app.coverage" NAME="SIISv1_app Coverage Results" MODIFIED="1511272207921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Hercules$tabVE_architectural_feature_ui.coverage" NAME="tabVE_architectural_feature_ui Coverage Results" MODIFIED="1510135608449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Hercules$comboboxExample.coverage" NAME="comboboxExample Coverage Results" MODIFIED="1511262638569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Hercules$comboboxExample.coverage" NAME="comboboxExample Coverage Results" MODIFIED="1511272389743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Hercules$tabVEHE_spoila_ui.coverage" NAME="tabVEHE_spoila_ui Coverage Results" MODIFIED="1510133661665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/devPythonLocus$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1505222988677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Hercules$ui_locus.coverage" NAME="ui_locus Coverage Results" MODIFIED="1511266162930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -141,22 +125,10 @@
       <file leaf-file-name="widget_locus.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/widget_locus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui_mainwindow_stacked.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ui_mainwindow_stacked.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4017">
-              <caret line="108" column="36" lean-forward="true" selection-start-line="108" selection-start-column="36" selection-end-line="108" selection-end-column="36" />
-              <folding>
-                <element signature="e#220#251#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -178,16 +150,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comboboxExample.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="comboboxExample.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comboboxExample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+            <state relative-caret-position="294">
+              <caret line="152" column="0" lean-forward="true" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#1807#1859#0" expanded="false" />
-                <marker date="1511264718399" expanded="true" signature="2752:2783" ph="SELECT LABEL... tbl_locusType" />
-                <marker date="1511264718399" expanded="true" signature="3081:3127" ph="SELECT LABEL... tbl_locus_subtype1" />
+                <element signature="e#1809#1861#0" expanded="false" />
+                <marker date="1511272482029" expanded="true" signature="2756:2787" ph="SELECT LABEL... tbl_locusType" />
+                <marker date="1511272482029" expanded="true" signature="3085:3131" ph="SELECT LABEL... tbl_locus_subtype1" />
               </folding>
             </state>
           </provider>
@@ -196,7 +168,7 @@
       <file leaf-file-name="Locus_entry_ui.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Locus_entry_ui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-970">
+            <state relative-caret-position="101">
               <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
               <folding />
             </state>
@@ -325,11 +297,11 @@
         <option value="$PROJECT_DIR$/ui_newproject.py" />
         <option value="$PROJECT_DIR$/testcombo.py" />
         <option value="$PROJECT_DIR$/ui_locusDetailed.py" />
-        <option value="$PROJECT_DIR$/comboboxExample.py" />
         <option value="$PROJECT_DIR$/ui_locus.py" />
-        <option value="$PROJECT_DIR$/widget_locus.py" />
         <option value="$PROJECT_DIR$/locus_repository.py" />
         <option value="$PROJECT_DIR$/ui_mainwindow_stacked.py" />
+        <option value="$PROJECT_DIR$/widget_locus.py" />
+        <option value="$PROJECT_DIR$/comboboxExample.py" />
       </list>
     </option>
   </component>
@@ -420,7 +392,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.widget_locus">
+  <component name="RunManager" selected="Python.comboboxExample">
     <configuration name="SIISv1_app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -586,10 +558,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.widget_locus" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ui_locus" />
-        <item index="2" class="java.lang.String" itemvalue="Python.SIISv1_app" />
-        <item index="3" class="java.lang.String" itemvalue="Python.comboboxExample" />
+        <item index="0" class="java.lang.String" itemvalue="Python.comboboxExample" />
+        <item index="1" class="java.lang.String" itemvalue="Python.SIISv1_app" />
+        <item index="2" class="java.lang.String" itemvalue="Python.widget_locus" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ui_locus" />
         <item index="4" class="java.lang.String" itemvalue="Python.testcombo" />
       </list>
     </recent_temporary>
@@ -611,7 +583,7 @@
     <frame x="1" y="1" width="1598" height="854" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21770026" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21770026" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28436658" sideWeight="0.5025674" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -642,10 +614,10 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28436658" sideWeight="0.49743262" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28825137" sideWeight="0.49743262" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2182285" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21770026" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -653,7 +625,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38409704" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38387978" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1159,46 +1131,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Locus_entry_ui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-970">
-          <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui_locus.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-884">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spatialiteConnection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1510698787744" expanded="true" signature="472:569" ph="INSERT INTO excavation" />
-            <marker date="1510698787744" expanded="true" signature="472:598" ph="INSERT INTO excavation" />
-            <marker date="1510698787744" expanded="true" signature="472:599" ph="INSERT INTO excavation" />
-            <marker date="1510698787744" expanded="true" signature="472:638" ph="INSERT INTO excavation" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comboboxExample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#1807#1859#0" expanded="false" />
-            <marker date="1511264718399" expanded="true" signature="2752:2783" ph="SELECT LABEL... tbl_locusType" />
-            <marker date="1511264718399" expanded="true" signature="3081:3127" ph="SELECT LABEL... tbl_locus_subtype1" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1238,16 +1175,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/widget_locus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui_locusDetailed.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3587">
@@ -1275,10 +1202,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui_mainwindow_stacked.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4017">
+        <state relative-caret-position="-3558">
           <caret line="108" column="36" lean-forward="true" selection-start-line="108" selection-start-column="36" selection-end-line="108" selection-end-column="36" />
           <folding>
             <element signature="e#220#251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spatialiteConnection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1510698787744" expanded="true" signature="472:569" ph="INSERT INTO excavation" />
+            <marker date="1510698787744" expanded="true" signature="472:598" ph="INSERT INTO excavation" />
+            <marker date="1510698787744" expanded="true" signature="472:599" ph="INSERT INTO excavation" />
+            <marker date="1510698787744" expanded="true" signature="472:638" ph="INSERT INTO excavation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Locus_entry_ui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widget_locus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comboboxExample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="152" column="0" lean-forward="true" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1809#1861#0" expanded="false" />
+            <marker date="1511272482029" expanded="true" signature="2756:2787" ph="SELECT LABEL... tbl_locusType" />
+            <marker date="1511272482029" expanded="true" signature="3085:3131" ph="SELECT LABEL... tbl_locus_subtype1" />
           </folding>
         </state>
       </provider>

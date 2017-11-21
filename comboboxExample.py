@@ -35,7 +35,7 @@ class EditItemDlg(QDialog):
         self.model2 = QSqlTableModel(self)
         self.model2.setTable("tbl_locus_subType1")
         self.model2.select()
-        self.model2.setFilter()
+        self.model2.setFilter("")
 
         self.combobox_3 = QComboBox()
         # Create combo and set its model
@@ -78,11 +78,11 @@ class EditItemDlg(QDialog):
 
 
         controlLayout = QGridLayout()
-        controlLayout.addWidget(self.typeComboBox, 5, 0 )
+        controlLayout.addWidget(self.typeComboBox, 4, 0 )
 
-        controlLayout.addWidget(self.combobox_1, 2, 0 )
-        controlLayout.addWidget(self.combobox_2, 3, 0 )
-        controlLayout.addWidget(self.combobox_3, 4, 0 )
+       # controlLayout.addWidget(self.combobox_1, 2, 0 )
+        #controlLayout.addWidget(self.combobox_2, 3, 0 )
+        controlLayout.addWidget(self.combobox_3, 5, 0 )
 
         self.setLayout(controlLayout)
         self.resize(500, 125)
@@ -133,7 +133,7 @@ class EditItemDlg(QDialog):
         # self.combobox_1.activated[str].connect(self.on_combo_activated)
 
         self.combobox_1.activated[str].connect(self.on_combo_activated)
-        self.typeComboBox.activated[str].connect(self.f)
+        self.typeComboBox.currentIndexChanged.connect(self.f)
 
 
 
@@ -152,7 +152,7 @@ class EditItemDlg(QDialog):
         data = self.typeComboBox.model().data(idx)
 
         self.combobox_3.clear()
-        self.combobox_3.addItems(self.combobox_3.setModelColumn(data))
+        # self.combobox_3.addItems(self.combobox_3.setModelColumn(data))
 
 
 

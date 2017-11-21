@@ -9,10 +9,10 @@ from ui_locus import *
 import ui_newproject
 
 
-class LocusControl(Locus, LocusRepository):
+class LocusController(Locus, LocusRepository):
     def __init__(self):
         # QWidget.__init__(self)
-        super(LocusControl, self).__init__()
+        super(LocusController, self).__init__()
 
         #self.setupUi()
 
