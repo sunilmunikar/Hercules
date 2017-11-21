@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="SIIS_2017.sqlite" uuid="9ab03068-0f02-41fe-a681-467a509b0975">
+    <data-source name="SIIS_2017.sqlite" uuid="4d88f7a9-f670-489e-962b-52d16468050f">
       <database-info product="SQLite" version="3.16.1" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>

@@ -1,39 +1,34 @@
-
+import sys
 # importing pyspatialite
 #import pyspatialite
 from sqlite3 import dbapi2 as db
 
+# from pyspatialite import *
 
 class SpatialiteDbConnect:
     #define the constructor
     def __init__(self):
-        try:
-            # creating/connecting the test_db
+        # try:
+            """creating/connecting the sqlite database """
 
-            connection = db.connect('SIIS_2017.sqlite')
-            #cursor = connection.cursor()
-            #db.autocommit(True)
+            self.connection = db.connect('SIIS_2017.sqlite')
 
-            #creating a cursor
+            """creating a cursor"""
 
-            #cursor = connection.execute('SELECT  sqlite_version()')
-
-            # """cursor = connection.execute(
-            #     """INSERT  INTO  excavation  ( projectTitle, projectType, projectSubType, site, studyArea)
-            #      VALUES (?, ?, ?, ?, ? )""", ('ann', 'bbb', 'c', 'd', 'e'))"""
+            #cursor = self.connection.cursor()
+            # cursor.execute(
+            #     '''INSERT  INTO  excavation  (projectID, projectTitle, projectType, projectSubType, site, studyArea)
+            #         VALUES  (4, 'test', 'field', 'xx', 'ga', 'ta')''')
+            #self.connection.commit()
             #
-            cursor = connection.execute('SELECT * FROM  excavation')
+            # cursor = connection.execute('select * from excavation')
+            # print cursor.fetchall()
 
-            print cursor.fetchall()
+            #self.connection.close()
+        # except sqlite3.IntegrityError:
+        #  print()
 
 
-            #connection.close()
-
-
-
-            #exception
-        except:
-            print("I am unable to connect to the database.")
 
 if __name__=='__main__':
     database_connection = SpatialiteDbConnect()

@@ -12,12 +12,13 @@ from PyQt4.QtGui import QFormLayout
 import Locus_entry_ui
 import form_layout_ui
 from locus_data import LocusDataEntryDialog
-from locusDetailed import *
-from ui_newproject import *
+from ui_locusDetailed import *
+#from ui_newproject import *
 from project_ui import *
 from find_main_ui import *
 from sample_main_ui import *
 
+from widget_newproject import NewprojectControl
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
@@ -102,13 +103,13 @@ class Ui_MainWindow(object):
         self.Locus.setToolButtonStyle(QtCore.Qt.ToolButtonTextBesideIcon)
         self.Locus.setObjectName(_fromUtf8("Locus"))
 
-        '''Locus Tool Button '''
+        '''Find Tool Button '''
         self.Find = QtGui.QToolButton(self.frame)
         self.Find.setGeometry(QtCore.QRect(20, 150, 100, 40))
         self.Find.setCheckable(True)
         self.Find.setObjectName(_fromUtf8("Find"))
 
-        '''Locus Tool Button '''
+        '''Sample Tool Button '''
         self.Sample = QtGui.QToolButton(self.frame)
         self.Sample.setGeometry(QtCore.QRect(20, 190, 100, 40))
         self.Sample.setCheckable(True)
@@ -161,16 +162,21 @@ class Ui_MainWindow(object):
 
         '''New Project page layout settings '''
 
-        newProjectWidget = NewProject()
-        newProjectWidget.setAutoFillBackground(True)
-        p = newProjectWidget.palette()
-        p.setColor(newProjectWidget.backgroundRole(), QtCore.Qt.lightGray)
-        newProjectWidget.setPalette(p)
+        newProjectWidget = NewprojectControl()
+        # newProjectWidget.setAutoFillBackground(True)
+        # p = newProjectWidget.palette()
+        # p.setColor(newProjectWidget.backgroundRole(), QtCore.Qt.lightGray)
+        # newProjectWidget.setPalette(p)
 
         self.NewProjectpage = newProjectWidget
         self.NewProjectpage.setObjectName(_fromUtf8("NewProjectpage"))
 
         self.stackedWidget.addWidget(self.NewProjectpage)
+
+
+        '''locus Project page layout settings'''
+
+
 
 
 

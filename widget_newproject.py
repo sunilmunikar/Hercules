@@ -6,19 +6,20 @@ from PyQt4 import QtGui
 from newproject_repository import ExcavationRepository
 import ui_newproject
 
-class NewprojectControl(QWidget, ui_newproject.NewProject):
+
+class NewprojectControl(ui_newproject.NewProject, ExcavationRepository):
     def __init__(self):
         # QWidget.__init__(self)
         super(NewprojectControl, self).__init__()
 
-        self.setupUi()
+        #self.setupUi()
 
         self.saveproject.clicked.connect(self.save_project)
-        #self.saveproject.clicked.connect(self.save_project)
+        # self.saveproject.clicked.connect(self.save_project)
 
         self.ButtonGroupProjectType.buttonClicked['QAbstractButton *'].connect(self.ButtonClickedText)
         self.ButtonGroupSubType.buttonClicked['QAbstractButton *'].connect(self.ButtonClickedText)
-        #self.ButtonGroupFieldType.buttonClicked['QAbstractButton *'].connect(self.btngroup_clicked)
+        # self.ButtonGroupFieldType.buttonClicked['QAbstractButton *'].connect(self.btngroup_clicked)
 
 
         # self.ButtonGroup.buttonClicked['int'].connect(self.btngroup_clicked)
@@ -31,13 +32,24 @@ class NewprojectControl(QWidget, ui_newproject.NewProject):
 
     def insert_projectinfo(self):
         projectTitle = str(self.ProjectTitle.text())
-        #print projectTitle
+        # print projectTitle
 
         projectType = self.projectType
-        #print projectType
+        # print projectType
 
         projectSubType = self.projectSubtype
-        #print projectSubType
+        # print projectSubType
+
+
+        projectSubTypeField = str(self.FieldworkActivitySubType.currentText())
+        #print projectSubTypeField
+
+        site = str(self.site.text())
+        studyArea = str(self.studyArea.text())
+
+
+
+
 
 
 
@@ -57,9 +69,9 @@ class NewprojectControl(QWidget, ui_newproject.NewProject):
         # description = str(self.DescriptionEntry.toPlainText())
         # print description
 
-        #newexcavation = Excavation(projectTitle, 'ff', 'fd', 'ss', 'fd')
+        newexcavation = Excavation(projectTitle, projectType, projectSubType, projectSubTypeField, site, studyArea )
         repo = ExcavationRepository()
-        repo.insert_excavation(projectTitle)
+        repo.insert_excavation(newexcavation)
 
     # def btngroup_clicked(self, button):
     #     if button == self.ButtonGroupProjectType:
@@ -119,14 +131,26 @@ class NewprojectControl(QWidget, ui_newproject.NewProject):
             #print "{0}".format(Button.text(), Button)
 
 
+class Excavation:
+    def __init__(self,  projectTitle, projectType, projectSubType, projectSubTypeField, site, studyArea):
+        #self.projectID = projectID
+        # self.excavation = excavation
+
+        self.projectTitle = projectTitle
+        self.projectType = projectType
+        self.projectSubType = projectSubType
+        self.projectSubTypeField = projectSubTypeField
+        self.site = site
+        self.studyArea = studyArea
+        #self.date = date
 
 
-def main():
-    app = QApplication(sys.argv)
-    main = NewprojectControl()
-
-    main.show()
-    sys.exit(app.exec_())
-
-if __name__ == '__main__':
-    main()
+# def main():
+#     app = QApplication(sys.argv)
+#     main = NewprojectControl()
+#
+#     main.show()
+#     sys.exit(app.exec_())
+#
+# if __name__ == '__main__':
+#     main()

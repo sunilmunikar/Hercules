@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="SIIS_2017.sqlite" uuid="9ab03068-0f02-41fe-a681-467a509b0975">
+    <data-source source="LOCAL" name="SIIS_2017.sqlite" uuid="4d88f7a9-f670-489e-962b-52d16468050f">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$USER_HOME$/Box Sync/Hercules/2_Database/Spatialite/SIIS_2017.sqlite</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/SIIS_2017.sqlite</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>

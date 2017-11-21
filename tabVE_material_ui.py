@@ -21,7 +21,7 @@ class VerticalElevationMaterial(QtGui.QWidget):
         self.IdentificationComment = QtGui.QPlainTextEdit()
         self.IdentificationComment.setFixedHeight(100)
 
-        self.showButton = QtGui.QPushButton('Show', self)
+        #self.showButton = QtGui.QPushButton('Show', self)
         self.saveButton = QtGui.QPushButton('Save', self)
         self.cancelButton = QtGui.QPushButton('Cancel', self)
 
