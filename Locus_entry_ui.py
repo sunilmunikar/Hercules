@@ -9,6 +9,7 @@
 from PyQt4 import QtCore, QtGui
 import UpdateDeleteWidget
 
+
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:

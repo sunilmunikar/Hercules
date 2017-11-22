@@ -2,7 +2,7 @@ import sys
 from PyQt4 import QtCore
 
 from PyQt4.QtGui import QListView, QWidget, QApplication, QStandardItemModel, QStandardItem, QLabel
-from LocusRepository import LocusRepository, Locus
+from old_LocusRepository import LocusRepository, Locus
 from postgresConnection import DatabaseConnection
 import psycopg2 as mdb
 import Locus_entry_ui

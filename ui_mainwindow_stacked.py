@@ -14,11 +14,11 @@ import form_layout_ui
 from locus_data import LocusDataEntryDialog
 from ui_locusDetailed import *
 #from ui_newproject import *
-from project_ui import *
-from find_main_ui import *
+from ui_project import *
+from find.ui_find_main import *
 from sample_main_ui import *
 
-from widget_newproject import NewprojectControl
+from newProject.widget_newproject import NewprojectControl
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:

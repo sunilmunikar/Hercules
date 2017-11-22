@@ -1,5 +1,5 @@
 import sys
-from PyQt4 import QtGui
+from PyQt4 import QtGui, QtSql
 
 #from PyQt4.QtGui import *
 from PyQt4.QtCore import *
@@ -7,11 +7,11 @@ from PyQt4.QtCore import *
 #from PyQt4.QtGui import QListView, QWidget, QApplication, QStandardItemModel, QStandardItem, QLabel
 
 import ui_mainwindow_stacked
-import ui_newproject
+import newProject.ui_newproject
 import locus_data
 
 #import newproject_ui
-from LocusRepository import LocusRepository, Locus
+from old_LocusRepository import LocusRepository, Locus
 #from postgresConnection import DatabaseConnection
 import psycopg2 as mdb
 import Locus_entry_ui
@@ -23,6 +23,8 @@ import Locus_entry_ui
 # class Second(QtGui.QWidget, newproject_ui.Ui_Form):
 #     def __init__(self, parent=None):
 #         super(Second, self).__init__(parent)
+from spatialiteConnection import SpatialiteDbConnect
+
 
 class AppMainwindow(QtGui.QMainWindow, ui_mainwindow_stacked.Ui_MainWindow):
     # standard code in all the app to call the widget
@@ -256,15 +258,22 @@ class AppMainwindow(QtGui.QMainWindow, ui_mainwindow_stacked.Ui_MainWindow):
 # #         repo.getAllLocus()
 #
 
-def addproject(self):
-    import ui_newproject
-    second = ui_newproject.Ui_Form
-
-    second.show()
+# def addproject(self):
+#     import ui_newproject
+#     second = ui_newproject.Ui_Form
+#
+#     second.show()
 
 
 def main():
     app = QtGui.QApplication(sys.argv)
+    db = QtSql.QSqlDatabase.addDatabase("QSQLITE")
+    connection = SpatialiteDbConnect()
+    db.setDatabaseName(connection.filename)
+    if not db.open():
+        QtGui.QMessageBox.warning(None, "Combo Box Example",
+                                  QString("Database Error: %1").arg(db.lastError().text()))
+        sys.exit(1)
     main = AppMainwindow()
 
     main.show()

@@ -37,7 +37,6 @@ class Locus(QtGui.QWidget):
         # Create combo and set its model
         self.locusType = self.createCombobox(self.locusTypeModel, "typeLabel")
         self.locusSubType1 = self.createCombobox(self.locusSubType1Model, "subtype1Label")
-
         self.locusSubType2 = self.createCombobox(self.locusSubType2Model, "subtype2Label")
         self.locusSubType3 = self.createCombobox(self.locusSubType3Model, "subtype3Label")
 
@@ -92,13 +91,11 @@ class Locus(QtGui.QWidget):
         self.setWindowTitle('Locus')
 
 
+        self.locusType.setCurrentIndex(-1)
+
         self.locusType.currentIndexChanged.connect( self.subType1selection)
-        #self.locusSubType2.clear()
-
         self.locusSubType1.currentIndexChanged.connect(self.subType2selection)
-
         self.locusSubType2.currentIndexChanged.connect(self.subType3selection)
-        #self.locusSubType3.clear()
 
 
     @staticmethod
@@ -115,7 +112,6 @@ class Locus(QtGui.QWidget):
 
     def subType1selection(self, index):
         locusTypeModelIndex = self.locusTypeModel.index(index, self.locusTypeModel.fieldIndex("typeID"))
-        # idx = self.locusTypeComboBox.model().index(index, self.locusTypeModel.fieldIndex("ID"))
         data = self.locusTypeModel.data(locusTypeModelIndex)
 
         filter = QString("typeID=%1").arg(data.toPyObject())
@@ -124,27 +120,24 @@ class Locus(QtGui.QWidget):
         print data.toPyObject()
 
     def subType2selection(self, index):
+
         locusSubType1ModelIndex = self.locusSubType1Model.index(index, self.locusSubType1Model.fieldIndex("subtype1ID"))
-        # idx = self.locusTypeComboBox.model().index(index, self.locusTypeModel.fieldIndex("ID"))
         data = self.locusSubType1Model.data(locusSubType1ModelIndex)
 
-        filter = QString("subtype1ID=%1").arg(data.toPyObject())
+        filter = QString("subtype1ID= %1").arg(data.toPyObject())
         self.locusSubType2Model.setFilter(filter)
         self.locusSubType2Model.select()
-        print data.toPyObject()
+        # print data.toPyObject()
+        # print data
 
     def subType3selection(self, index):
-
-
         locusSubType2ModelIndex = self.locusSubType2Model.index(index, self.locusSubType2Model.fieldIndex("subtype2ID"))
-        # idx = self.locusTypeComboBox.model().index(index, self.locusTypeModel.fieldIndex("ID"))
         data = self.locusSubType2Model.data(locusSubType2ModelIndex)
 
         filter = QString("subtype2ID=%1").arg(data.toPyObject())
         self.locusSubType3Model.setFilter(filter)
         self.locusSubType3Model.select()
         print data.toPyObject()
-        self.locusSubType3.clear()
 
 
 

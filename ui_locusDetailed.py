@@ -1,19 +1,25 @@
 import sys
 from PyQt4 import QtGui, QtCore
 
-from locus_data import LocusDataEntryDialog
-from tabVE_architectural_feature_ui import ArchitecturalFeature
-from surveylocus_ui import *
-from tabVE_material_ui import *
-from tabVEHE_spoila_ui import *
-from tabVE_ashlarSurfTreat_ui import *
-from tabVE_constructiontech_ui import *
-from tabVE_finishing_ui import *
-from tabHE_superstrelement_ui import *
-from tabHE_floor_ui import *
-from inclusionLocus_ui import *
+# import VerticalElevation
+# dir(VerticalElevation)
 
-from VERepository import *
+
+from locus_data import LocusDataEntryDialog
+from locus.VerticalElevation.tabVE_ashlarSurfTreat_ui import *
+from locus.VerticalElevation.tabVE_architectural_feature_ui import ArchitecturalFeature
+from locus.ui_surveylocus import *
+from locus.VerticalElevation.tabVE_material_ui import *
+from locus.VerticalElevation.tabVEHE_spoila_ui import *
+from locus.VerticalElevation.tabVE_ashlarSurfTreat_ui import *
+from locus.VerticalElevation.tabVE_constructiontech_ui import *
+from locus.VerticalElevation.tabVE_finishing_ui import *
+from locus.HorizontalElevation.tabHE_superstrelement_ui import *
+from locus.HorizontalElevation.tabHE_floor_ui import *
+from locus.ui_inclusionslocus import *
+from locus.VerticalElevation.VERepository import *
+
+
 #from tab4VE_ui import *
 
 class LocusDetailedDialog(QtGui.QTabWidget):
