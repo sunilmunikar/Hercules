@@ -4,6 +4,10 @@ import sys
 from sqlite3 import dbapi2 as db
 
 # from pyspatialite import *
+import os
+
+CONFIG_DATABASE_PATH = "../"
+CONFIG_DATABASE_NAME = "SIIS_2017.sqlite"
 
 class SpatialiteDbConnect:
     #define the constructor
@@ -11,8 +15,12 @@ class SpatialiteDbConnect:
         # try:
             """creating/connecting the sqlite database """
 
-            self.connection = db.connect('SIIS_2017.sqlite')
+            self.filename = os.path.join(CONFIG_DATABASE_PATH,
+                                    CONFIG_DATABASE_NAME)
+            self.connection = db.connect(self.filename)
 
+            # if not db.Connection.
+            #     print  "error"
             """creating a cursor"""
 
             #cursor = self.connection.cursor()
